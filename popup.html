@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>MDN-Dox Search</title>
+  <style>
+    html,
+    body {
+      font-size: 14;
+      margin: 0;
+      min-height: 120px;
+      padding: 0;
+      width: 324px;
+      font-family: 'Fira Sans', sans-serif;
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      color: rgb(183, 226, 240);
+    }
+
+    span {
+      text-align: center;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    img {
+      width: 30px;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+
+    .header {
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+      background-color: rgb(90, 90, 90);
+    }
+
+    .search-div {
+      margin-left: 15px;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: rgb(0, 110, 255);
+      margin-bottom: 8px;
+      padding: 5px;
+    }
+
+    .links a:hover {
+      background-color: rgb(90, 90, 90);
+      color: white;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="logo">
+      <img src="images/mdn_150.png" alt="logo" class="logo-icon">
+      <span>Search the MDN documentation</span>
+    </h1>
+  </div>
+  <br />
+  <div class="search-div">
+    <input type="text" id="search">
+    <button class="btn btn-primary btn-sm" id='search-button'><i class="fa fa-search"></i></button>
+  </div>
+  <br />
+  <p>Frequently used global objects and methods:</p>
+  <div class="links">
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+      target="_blank">Array</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+      target="_blank">Object</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+      target="_blank">String</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"
+      target="_blank">Date</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+      target="_blank">Number</a>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
